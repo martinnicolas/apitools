@@ -1,12 +1,12 @@
 #!/bin/bash
 
 function usage {
-	echo ' _______________________________________ '
-	echo '|                                       |'
-	echo '| Uso: api_create <nombre_api>          |'
-	echo '| Ejemplo: api_create prevision-backend |'
-	echo '|_______________________________________|'
-	echo '					       '
+	echo ' ____________________________________________________ '
+	echo '|                                                    |'
+	echo '| Uso: api_create /path/to/api                       |'
+	echo '| Ejemplo: api_create /home/martin/prevision-backend |'
+	echo '|____________________________________________________|'
+	echo '					                    '
 }
 
 set -e
