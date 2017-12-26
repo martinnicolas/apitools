@@ -19,7 +19,7 @@ echo '-- Creando API... --'
 git clone http://github.com/martinnicolas/backend.git $1
 echo '-- Limpiando directorio... --'
 rm -rf $1/.git
-sed -i -e s/backend/$1/g prueba/pom.xml
+sed -i -e s/backend/$1/g $1/pom.xml
 echo '-- Listo!! --'
 
 
