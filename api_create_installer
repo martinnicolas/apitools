@@ -6,7 +6,7 @@ function usage {
 	echo '| Uso: api_create_installer	                       |'
 	echo '| Ejemplo: api_create_installer					   |'
 	echo '|____________________________________________________|'
-	echo '					                    '
+	echo '					                    				'
 }
 
 set -e
