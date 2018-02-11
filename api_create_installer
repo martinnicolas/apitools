@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function usage {
+	echo ' ____________________________________________________ '
+	echo '|                                                    |'
+	echo '| Uso: api_create_installer	                       |'
+	echo '| Ejemplo: api_create_installer					   |'
+	echo '|____________________________________________________|'
+	echo '					                    '
+}
+
+set -e
+
+if [ $# -ne 0 ] ; then
+	usage
+	exit 1
+fi
+
+current_dir='pwd'
+#Monto el directorio de apitools en el PATH para tenerlo disponible en cade session
+#export PATH=$PATH:/home/martin/Desarrollo/apitools
+export PATH=$PATH:/${current_dir}

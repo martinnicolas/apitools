@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Describe el uso del comando
 function usage {
 	echo ' ____________________________________________________ '
 	echo '|                                                    |'
@@ -11,15 +12,18 @@ function usage {
 
 set -e
 
+#Valido argumentos
 if [ $# -eq 0 ] || [ $# -gt 1 ] ; then
 	usage
 	exit 1
 fi
+
 echo '-- Creando API... --'
 git clone http://github.com/martinnicolas/backend.git $1
 echo '-- Limpiando directorio... --'
 rm -rf $1/.git
-sed -i -e s/backend/$1/g $1/pom.xml
+api_name='basename $1'
+sed -i -e s/backend/${api_name}/g $1/pom.xml
 echo '-- Listo!! --'
 
 
