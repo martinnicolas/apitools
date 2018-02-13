@@ -22,8 +22,8 @@ echo '-- Creando API... --'
 git clone http://github.com/martinnicolas/backend.git $1
 echo '-- Limpiando directorio... --'
 rm -rf $1/.git
-api_name='basename $1'
-sed -i -e s/backend/${api_name}/g $1/pom.xml
+api_name=$(basename "$1")
+sed -i -e "s/backend/$api_name/g" $1/pom.xml
 echo '-- Listo!! --'
 
 
