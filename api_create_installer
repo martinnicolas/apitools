@@ -3,7 +3,7 @@
 function usage {
 	echo ' _________________________________ '
 	echo '|                                 |'
-	echo '| Uso: api_create_installer	    |'
+	echo '| Uso: api_create_installer		|'
 	echo '| Ejemplo: api_create_installer	|'
 	echo '|_________________________________|'
 	echo '					                    				'
